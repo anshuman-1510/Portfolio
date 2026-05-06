@@ -27,7 +27,7 @@ app.use(
 );
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || "http://localhost:5173",
+    origin: process.env.CLIENT_URL || "https://portfolio-builder-2n4d.onrender.com",
     credentials: true
   })
 );
@@ -71,7 +71,7 @@ async function startServer() {
 
     await mongoose.connect(process.env.MONGODB_URI);
     app.listen(PORT, () => {
-      console.log(`API running on http://localhost:${PORT}`);
+      console.log(`API running on https://portfolio-builder-2n4d.onrender.com`);
     });
   } catch (error) {
     console.error("Failed to start server:", error.message);
