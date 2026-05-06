@@ -1,0 +1,10 @@
+node_modules
+dist
+.env
+.DS_Store
+server/uploads/*
+!server/uploads/.gitkeep
+!server/uploads/profiles/.gitkeep
+!server/uploads/projects/.gitkeep
+!server/uploads/resumes/.gitkeep
+npm-debug.log*
